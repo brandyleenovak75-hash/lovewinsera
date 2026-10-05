@@ -25,3 +25,65 @@ box-shadow:0 30px 80px #0008;position:relative;overflow:hidden}
 .carnival-media-shell:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,var(--gold) 0 10%,transparent 11% 100%);box-shadow:0 0 80px rgba(249,178,78,.45)}
 .carnival-media-glow{position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(217,184,255,.09) 50%,transparent 70%);transform:translateX(-30%)}
 @media(max-width:780px){.movement-layout,.carnival-layout{grid-template-columns:1fr}.movement-heading{position:static}.carnival-media-shell{min-height:260px}}
+
+/* Homepage restoration pass */
+.site-header{background:rgba(235,233,238,.97);box-shadow:0 7px 28px rgba(12,8,20,.08)}
+.brand-logo{filter:drop-shadow(0 7px 14px rgba(74,13,83,.22));border-radius:16px}
+.hero{position:relative;overflow:hidden;background:
+radial-gradient(circle at 76% 18%,rgba(123,31,162,.62),transparent 31%),
+radial-gradient(circle at 8% 88%,rgba(255,112,67,.14),transparent 28%),
+linear-gradient(132deg,#4A0D53 0%,#1f0829 48%,#0C0814 100%)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 28%,rgba(217,184,255,.04) 52%,transparent 75%);pointer-events:none}
+.hero-grid{position:relative;z-index:1}
+.hero h1{text-shadow:0 5px 32px rgba(0,0,0,.28)}
+.hero-image{border-radius:28px;transform:rotate(1deg);box-shadow:0 34px 90px rgba(0,0,0,.58),0 0 0 1px rgba(255,255,255,.14)}
+.hero-image img{width:100%;min-height:480px;object-fit:cover}
+.movement-panel{border-top:1px solid rgba(74,13,83,.08);border-bottom:1px solid rgba(74,13,83,.08)}
+.movement-heading h2{max-width:500px}
+.movement-body{padding:30px 34px;background:rgba(255,255,255,.38);border:1px solid rgba(74,13,83,.1);border-radius:24px;box-shadow:0 18px 46px rgba(74,13,83,.06)}
+.carnival-story{padding-top:92px;padding-bottom:92px}
+.carnival-layout{grid-template-columns:1.08fr .92fr;gap:56px;align-items:start}
+.carnival-copy h3{font-size:clamp(1.8rem,3vw,2.6rem);margin:1.4em 0 .4em;color:var(--lav)}
+.carnival-media{position:sticky;top:154px;display:grid;grid-template-columns:1fr .86fr;grid-template-rows:auto auto;gap:16px;align-items:end}
+.carnival-photo{margin:0;overflow:hidden;border-radius:24px;border:1px solid rgba(255,255,255,.2);box-shadow:0 28px 70px rgba(0,0,0,.5);background:#16051f}
+.carnival-photo img{width:100%;height:100%;object-fit:cover}
+.carnival-photo-main{grid-column:1 / -1;aspect-ratio:4/5;transform:rotate(-1.2deg)}
+.carnival-photo-wide{grid-column:1 / -1;aspect-ratio:16/9;transform:rotate(1deg);margin-top:-34px;margin-left:56px;width:calc(100% - 56px);border-color:rgba(249,178,78,.5)}
+.framework-preview{position:relative;background:
+linear-gradient(135deg,rgba(217,184,255,.22),transparent 36%),
+#dcdce0}
+.framework-preview:before{content:"42°";position:absolute;right:4vw;top:24px;font-size:clamp(5rem,14vw,12rem);font-weight:700;line-height:1;color:rgba(74,13,83,.055);pointer-events:none}
+.framework-preview .grid-2{position:relative;z-index:1}
+.framework-preview .card{border-top:4px solid var(--royal)}
+.daily-preview{background:linear-gradient(180deg,#ecebf0 0%,#e4e2e8 100%)}
+.daily-preview .offer-grid{gap:20px}
+.daily-preview .offer{position:relative;overflow:hidden;border-top:4px solid var(--royal);transition:transform .2s ease,box-shadow .2s ease}
+.daily-preview .offer:nth-child(4){border-top-color:var(--gold)}
+.daily-preview .offer:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(74,13,83,.12)}
+.lighthouse-section{position:relative;overflow:hidden;background:
+radial-gradient(circle at 78% 42%,rgba(249,178,78,.18) 0 2%,rgba(249,178,78,.08) 3% 11%,transparent 26%),
+linear-gradient(135deg,#09060d,#16051f 60%,#0C0814)}
+.lighthouse-section:after{content:"";position:absolute;right:-12%;top:26%;width:62%;height:12%;background:linear-gradient(90deg,transparent,rgba(249,178,78,.18),transparent);transform:rotate(-9deg);filter:blur(8px);pointer-events:none}
+.lighthouse-section .prose{position:relative;z-index:1}
+.home-close{background:
+radial-gradient(circle at 50% 110%,rgba(249,178,78,.22),transparent 36%),
+linear-gradient(135deg,#7B1FA2,#4A0D53 58%,#25082d)}
+.home-close .closing-here{text-shadow:0 8px 35px rgba(12,8,20,.35)}
+@media(max-width:900px){
+  .carnival-media{position:static}
+}
+@media(max-width:780px){
+  .hero-image img{min-height:0}
+  .movement-body{padding:24px}
+  .carnival-story{padding-top:62px;padding-bottom:62px}
+  .carnival-media{grid-template-columns:1fr}
+  .carnival-photo-main,.carnival-photo-wide{grid-column:auto;width:100%;margin:0;transform:none;aspect-ratio:auto}
+  .carnival-photo img{height:auto}
+  .framework-preview:before{right:2vw;top:8px}
+}
+@media(max-width:600px){
+  .site-header{position:relative}
+  .hero{padding-top:50px}
+  .movement-body{padding:20px}
+  .carnival-layout{gap:30px}
+}
