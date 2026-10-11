@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Storefront | Love Wins Era</title>
+  <meta name="description" content="Love Wins Era storefront for one-of-a-kind jewelry, Printify products, and digital offers." />
+  <style>
+    :root {
+      --plum: #260138;
+      --amethyst: #7B1FA2;
+      --lavender: #D9B8FF;
+      --rose: #F8C4D8;
+      --silver: #d9d9df;
+      --ink: #12051a;
+      --white: #fffafc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      color: var(--white);
+      background: radial-gradient(circle at top left, #3b0755 0%, var(--plum) 42%, #08030d 100%);
+      line-height: 1.55;
+    }
+    a { color: inherit; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 28px 20px 56px; }
+    header { padding: 18px 0 32px; }
+    .eyebrow { letter-spacing: .13em; text-transform: uppercase; color: var(--silver); font-size: .82rem; }
+    h1 { font-size: clamp(2.5rem, 7vw, 5.4rem); line-height: .95; margin: 14px 0 18px; }
+    .lead { max-width: 780px; font-size: clamp(1.08rem, 2.4vw, 1.38rem); color: #f2e9f8; }
+    .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin: 34px 0; }
+    .card {
+      border: 1px solid rgba(217, 184, 255, .38);
+      border-radius: 22px;
+      padding: 24px;
+      background: rgba(255,255,255,.07);
+      box-shadow: 0 18px 45px rgba(0,0,0,.28);
+    }
+    .card h2 { margin: 0 0 10px; font-size: 1.45rem; }
+    .card p { margin: 0 0 18px; color: #f1e7f5; }
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.6);
+      background: var(--white);
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .button.secondary { background: transparent; color: var(--white); }
+    .note {
+      margin-top: 28px;
+      padding: 18px;
+      border-left: 4px solid var(--rose);
+      background: rgba(0,0,0,.28);
+      color: #f7edf8;
+    }
+    .path { font-size: .98rem; color: var(--silver); }
+    footer { margin-top: 42px; color: var(--silver); font-size: .92rem; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="eyebrow">Love Wins Era Storefront</div>
+      <h1>Made pieces. Real stories. Make the move.</h1>
+      <p class="lead">One-of-a-kind jewelry made from new, reclaimed, broken, and vintage elements. Everything shown as available is available unless it has already moved to sold. Buyers propose an amount. Shipping is extra.</p>
+    </header>
+
+    <section class="grid" aria-label="Storefront options">
+      <article class="card">
+        <h2>Jewelry offers</h2>
+        <p>Use the jewelry offer form to send the piece number, your offer, and shipping details. Brandy reviews, accepts, counters, or declines.</p>
+        <a class="button" href="#offer-form-status">Make a jewelry offer</a>
+      </article>
+
+      <article class="card">
+        <h2>Printify products</h2>
+        <p>Wearable Love Wins Era pieces, shirts, and campaign products live here as the storefront expands.</p>
+        <a class="button secondary" href="/make-your-move/">Browse current offers</a>
+      </article>
+
+      <article class="card">
+        <h2>Digital offers</h2>
+        <p>Daily Moves, workbooks, survival kits, and future From Here tools stay connected to the same movement path.</p>
+        <a class="button secondary" href="/daily-moves-%7C-from-here/">Start From Here</a>
+      </article>
+    </section>
+
+    <section id="offer-form-status" class="note">
+      <h2>Jewelry offer form status</h2>
+      <p><strong>Connected system:</strong> Quizforma form <strong>Love Wins Era | Jewelry Offer #1097</strong> is active and wired to the Global Control tag <strong>jewelry_offer_submitted</strong>.</p>
+      <p><strong>Missing before this button can go fully live:</strong> the exact public Quizforma host URL is not exposed by the current tool response. The verified public slug is <strong>cdc4541d8eeef835</strong>.</p>
+      <p class="path"><strong>Automation path:</strong> jewelry listing → offer form → jewelry_offer_submitted → Storefront | jewelry_offer workflow → Storefront | jewelry_offers pipeline → review → accept/counter/decline → invoice/pay link → payment received → shipping/tracking → inventory sold/shipped.</p>
+    </section>
+
+    <footer>
+      Love Wins Era · It’s not a cult... It’s a movement. · Because life is a dance.
+    </footer>
+  </main>
+</body>
+</html>
