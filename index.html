@@ -4787,6 +4787,33 @@ It’s a way of life.</span></p></div><div data-ux="Block" class="x-el x-el-div 
 <script>"use strict";Core.utils.onAllowCookieTracking(function () {const queryString = window.location.search;const urlParams = new URLSearchParams(queryString);const whiteList = ['gclid', 'fbclid', 'gdan_clid'];const belongToList = list => item => list.includes(item);const belongToWhiteList = belongToList(whiteList);Array.from(urlParams).forEach(param => {const [queryKey, queryResult] = param;if (!belongToWhiteList(queryKey)) return;localStorage.setItem(queryKey, queryResult);});});
 "use strict";Core.utils.onAllowCookieTracking(() => {function u() {if (crypto.randomUUID) return crypto.randomUUID();const b = crypto.getRandomValues(new Uint8Array(16));b[6] = b[6] & 15 | 64;b[8] = b[8] & 63 | 128;const h = [...b].map(x => x.toString(16).padStart(2, "0"));return `${h[0]}${h[1]}${h[2]}${h[3]}-${h[4]}${h[5]}-${h[6]}${h[7]}-${h[8]}${h[9]}-${h.slice(10).join("")}`;}if (!document.cookie.includes("x-visitor-id")) {!function (o, i, e = 60) {const t = new Date();t.setTime(t.getTime() + 864e5 * e);const n = `expires=${t.toUTCString()}`;document.cookie = `${o}=${i};${n};path=/`;}("x-visitor-id", u(), 60);}});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"f1200674e0b4447b868c04a60ac90a8e","r":1,"spa":2}' crossorigin="anonymous"></script>
 
+<!-- LWE visible storefront homepage section 2026-10-16 -->
+<style>
+#lwe-home-storefront{box-sizing:border-box;width:100%;background:#17141e;color:#fff;padding:32px 12px;border-top:2px solid #7b1fa2;border-bottom:2px solid #7b1fa2}
+#lwe-home-storefront h2{font:bold clamp(26px,4vw,42px) Georgia,serif;text-align:center;margin:0 0 18px;color:#f9b24e}
+#lwe-home-storefront iframe{display:block;width:100%;height:1550px;border:0;background:#17141e}
+@media(max-width:700px){#lwe-home-storefront{padding:24px 0}#lwe-home-storefront iframe{height:1800px}}
+</style>
+<section id="lwe-home-storefront" aria-label="Shop Love Wins Era products">
+<h2>Shop Love Wins Era</h2>
+<iframe src="/storefront/" title="Love Wins Era storefront products" loading="eager"></iframe>
+</section>
+<script>
+(function(){
+function positionStorefront(){
+var section=document.getElementById('lwe-home-storefront');if(!section)return;
+var headings=document.querySelectorAll('h1,h2,h3,h4,[role="heading"]');
+for(var i=0;i<headings.length;i++){
+var h=headings[i];if(/^\s*(?:the\s+)?blog\s*$/i.test(h.textContent||'')){
+var target=h.closest('section,article,[data-aid],.section')||h;
+if(!section.contains(target)&&target.parentNode){target.parentNode.insertBefore(section,target);return;}
+}}
+var footer=document.querySelector('footer,[role="contentinfo"]');if(footer&&footer.parentNode){footer.parentNode.insertBefore(section,footer);}
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',positionStorefront);else positionStorefront();
+setTimeout(positionStorefront,900);
+})();
+</script>
 <!-- LWE storefront navigation 2026-10-14 -->
 <a href="/storefront/" aria-label="Shop the Love Wins Era storefront" style="position:fixed;right:18px;bottom:20px;z-index:2147483640;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 20px;border:1px solid #bfbfc7;border-radius:999px;background:#17141e;color:#fff;text-decoration:none;font:700 16px Georgia,serif;box-shadow:0 4px 20px rgba(0,0,0,.35)">Shop Love Wins Era ↗</a>
 </body></html>
