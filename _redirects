@@ -1,3 +1,7 @@
+# Legacy GoDaddy blog URLs now resolve to Think About This
+/love-wins-era/f /blog/ 301
+/love-wins-era/f/ /blog/ 301
+/love-wins-era/f/* /blog/:splat 301
 /love-wins-era / 301
 /shop /storefront/ 302
 /store /storefront/ 302
