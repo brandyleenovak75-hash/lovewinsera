@@ -1,4 +1,4 @@
-# Open the magazine; keep original website files in the repository.
+# Magazine homepage and redirects for retired website URLs.
 / /blog/ 302!
 /index.html /blog/ 302!
 /love-wins-era /blog/ 302!
