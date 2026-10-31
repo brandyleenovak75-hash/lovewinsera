@@ -1,4 +1,20 @@
-/love-wins-era / 301
+# Magazine homepage and redirects for retired website URLs.
+/ /blog/ 302!
+/index.html /blog/ 302!
+/love-wins-era /blog/ 302!
+/love-wins-era/* /blog/ 302!
+/42-degrees-framework-1 /blog/ 302!
+/42-degrees-framework-1/* /blog/ 302!
+/about-the-love-wins-era /blog/ 302!
+/about-the-love-wins-era/* /blog/ 302!
+/contact /blog/ 302!
+/contact/* /blog/ 302!
+/daily-moves-%7C-from-here /blog/ 302!
+/daily-moves-%7C-from-here/* /blog/ 302!
+/make-your-move /blog/ 302!
+/make-your-move/* /blog/ 302!
+/thank-you /blog/ 302!
+/thank-you/* /blog/ 302!
 /shop /storefront/ 302
 /store /storefront/ 302
 /jewelry /storefront/ 302
